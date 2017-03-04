@@ -13,6 +13,7 @@ class CalViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     
     var tmpNum = 0
+    var resultMode = false
     
     @IBOutlet weak var button1: KusoButton!
     @IBOutlet weak var button2: KusoButton!
@@ -26,11 +27,12 @@ class CalViewController: UIViewController {
     @IBOutlet weak var button10: KusoButton!
     
     @IBAction func kusoButtonAction(_ sender: KusoButton) {
-        if textField.text! == "0" {
+        if textField.text! == "0" || resultMode {
             textField.text = ""
         }
         textField.text = textField.text! + String(sender.number)
         mapping()
+        resultMode = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -53,6 +55,8 @@ class CalViewController: UIViewController {
     @IBAction func plusAction(_ sender: Any) {
         tmpNum = Int(textField.text!)!
         textField.text = "0"
+        resultMode = false
+        mapping()
     }
     @IBAction func resultAction(_ sender: Any) {
         if (Int(arc4random()) % 5 == 0) {
@@ -64,5 +68,7 @@ class CalViewController: UIViewController {
         let result = tmpNum + Int(textField.text!)!
         textField.text = String(result)
         tmpNum = result
+        resultMode = true
+        mapping()
     }
 }
