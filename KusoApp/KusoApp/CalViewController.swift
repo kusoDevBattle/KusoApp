@@ -61,6 +61,8 @@ class CalViewController: UIViewController {
             present(alert, animated: true, completion: nil)
             return
         }
-        textField.text = String(tmpNum + Int(textField.text!)!)
+        let result = tmpNum + Int(textField.text!)!
+        textField.text = String(result)
+        tmpNum = result
     }
 }

@@ -60,6 +60,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zE4-d9-IHc">
+                                <rect key="frame" x="16" y="258" width="133" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="クソカメラ"/>
+                                <connections>
+                                    <segue destination="phW-Be-klQ" kind="show" id="Eoa-gh-D0V"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -222,6 +230,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VGH-ge-pv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="856.79999999999995" y="790.25487256371821"/>
+        </scene>
+        <!--クソカメラ-->
+        <scene sceneID="4c9-BE-92l">
+            <objects>
+                <viewController id="phW-Be-klQ" customClass="CameraViewController" customModule="KusoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7wG-pg-u6F"/>
+                        <viewControllerLayoutGuide type="bottom" id="spf-7K-blz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ydT-hU-oub">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPc-Qs-vsj">
+                                <rect key="frame" x="133" y="318" width="108" height="30"/>
+                                <state key="normal" title="クソカメラ起動"/>
+                                <connections>
+                                    <action selector="openCamera:" destination="phW-Be-klQ" eventType="touchUpInside" id="mCR-vr-EKn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LPc-Qs-vsj" firstAttribute="centerY" secondItem="ydT-hU-oub" secondAttribute="centerY" id="790-U4-E2y"/>
+                            <constraint firstItem="LPc-Qs-vsj" firstAttribute="centerX" secondItem="ydT-hU-oub" secondAttribute="centerX" id="g8m-Ye-enP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="クソカメラ" id="xgX-Xj-8kB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h8e-GZ-Qel" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148" y="1555"/>
         </scene>
         <!--クソ時計-->
         <scene sceneID="h1I-Vb-qhb">

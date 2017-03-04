@@ -23,6 +23,7 @@
 		00D211F61E6A8224008BF514 /* KusoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D211F51E6A8224008BF514 /* KusoButton.swift */; };
 		00D211F81E6A89E9008BF514 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D211F71E6A89E9008BF514 /* ClockViewController.swift */; };
 		00D211FA1E6A8C0C008BF514 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D211F91E6A8C0C008BF514 /* InterfaceController.swift */; };
+		00D211FC1E6A9CF3008BF514 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D211FB1E6A9CF3008BF514 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		00D211F51E6A8224008BF514 /* KusoButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KusoButton.swift; sourceTree = "<group>"; };
 		00D211F71E6A89E9008BF514 /* ClockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
 		00D211F91E6A8C0C008BF514 /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		00D211FB1E6A9CF3008BF514 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				00D211F31E6A8129008BF514 /* CalViewController.swift */,
 				00D211F51E6A8224008BF514 /* KusoButton.swift */,
 				00D211F71E6A89E9008BF514 /* ClockViewController.swift */,
+				00D211FB1E6A9CF3008BF514 /* CameraViewController.swift */,
 				00D211C31E6A7D73008BF514 /* Assets.xcassets */,
 				00D211C51E6A7D73008BF514 /* LaunchScreen.storyboard */,
 				00D211C81E6A7D73008BF514 /* Info.plist */,
@@ -308,6 +311,7 @@
 				00D211F61E6A8224008BF514 /* KusoButton.swift in Sources */,
 				00D211F41E6A8129008BF514 /* CalViewController.swift in Sources */,
 				00D211FA1E6A8C0C008BF514 /* InterfaceController.swift in Sources */,
+				00D211FC1E6A9CF3008BF514 /* CameraViewController.swift in Sources */,
 				00D211F81E6A89E9008BF514 /* ClockViewController.swift in Sources */,
 				00D211BD1E6A7D73008BF514 /* AppDelegate.swift in Sources */,
 			);
@@ -532,6 +536,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y7RDDMCSA8;
 				INFOPLIST_FILE = KusoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.kibousoft.KusoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -545,6 +550,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y7RDDMCSA8;
 				INFOPLIST_FILE = KusoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.kibousoft.KusoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
