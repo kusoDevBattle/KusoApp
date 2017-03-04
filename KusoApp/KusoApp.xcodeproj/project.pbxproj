@@ -21,6 +21,8 @@
 		00D211E41E6A7D74008BF514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D211E31E6A7D74008BF514 /* Assets.xcassets */; };
 		00D211F41E6A8129008BF514 /* CalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D211F31E6A8129008BF514 /* CalViewController.swift */; };
 		00D211F61E6A8224008BF514 /* KusoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D211F51E6A8224008BF514 /* KusoButton.swift */; };
+		00D211F81E6A89E9008BF514 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D211F71E6A89E9008BF514 /* ClockViewController.swift */; };
+		00D211FA1E6A8C0C008BF514 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D211F91E6A8C0C008BF514 /* InterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,8 @@
 		00D211E51E6A7D74008BF514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00D211F31E6A8129008BF514 /* CalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalViewController.swift; sourceTree = "<group>"; };
 		00D211F51E6A8224008BF514 /* KusoButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KusoButton.swift; sourceTree = "<group>"; };
+		00D211F71E6A89E9008BF514 /* ClockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
+		00D211F91E6A8C0C008BF514 /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 				00D211C01E6A7D73008BF514 /* Main.storyboard */,
 				00D211F31E6A8129008BF514 /* CalViewController.swift */,
 				00D211F51E6A8224008BF514 /* KusoButton.swift */,
+				00D211F71E6A89E9008BF514 /* ClockViewController.swift */,
 				00D211C31E6A7D73008BF514 /* Assets.xcassets */,
 				00D211C51E6A7D73008BF514 /* LaunchScreen.storyboard */,
 				00D211C81E6A7D73008BF514 /* Info.plist */,
@@ -144,6 +149,7 @@
 			children = (
 				00D211D01E6A7D74008BF514 /* Interface.storyboard */,
 				00D211D31E6A7D74008BF514 /* Assets.xcassets */,
+				00D211F91E6A8C0C008BF514 /* InterfaceController.swift */,
 				00D211D51E6A7D74008BF514 /* Info.plist */,
 			);
 			path = "KusoApp WatchKit App";
@@ -301,6 +307,8 @@
 				00D211BF1E6A7D73008BF514 /* ViewController.swift in Sources */,
 				00D211F61E6A8224008BF514 /* KusoButton.swift in Sources */,
 				00D211F41E6A8129008BF514 /* CalViewController.swift in Sources */,
+				00D211FA1E6A8C0C008BF514 /* InterfaceController.swift in Sources */,
+				00D211F81E6A89E9008BF514 /* ClockViewController.swift in Sources */,
 				00D211BD1E6A7D73008BF514 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

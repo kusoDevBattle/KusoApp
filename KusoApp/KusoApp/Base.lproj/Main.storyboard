@@ -45,10 +45,25 @@
                                     <segue destination="mH6-Ao-mEK" kind="show" id="Xqv-Qd-5xy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64s-9c-J7c">
+                                <rect key="frame" x="206" y="108" width="118" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="クソ時計"/>
+                                <connections>
+                                    <segue destination="IdV-Gv-dqZ" kind="show" id="Il3-rr-Wcs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="クソツール" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciU-wV-aws">
+                                <rect key="frame" x="71" y="508" width="232" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="クソアプリメニュー" id="mSk-sK-3fj"/>
+                    <navigationItem key="navigationItem" title="クソツール" id="mSk-sK-3fj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="giX-3y-er4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -207,6 +222,150 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VGH-ge-pv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="856.79999999999995" y="790.25487256371821"/>
+        </scene>
+        <!--クソ時計-->
+        <scene sceneID="h1I-Vb-qhb">
+            <objects>
+                <viewController id="IdV-Gv-dqZ" customClass="ClockViewController" customModule="KusoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ihO-Lr-p14"/>
+                        <viewControllerLayoutGuide type="bottom" id="iH9-LS-jAO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WJN-m6-Jal">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jw5-3r-RIg">
+                                <rect key="frame" x="-16.5" y="278.5" width="408" height="110"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IP7-5D-lmx">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="58K-Lo-Hle"/>
+                                            <constraint firstAttribute="height" constant="110" id="kr2-JQ-P8b"/>
+                                        </constraints>
+                                        <string key="text">⌚️⌚️⌚️
+⌚️💩⌚️
+⌚️⌚️⌚️
+⌚️💩⌚️
+⌚️⌚️⌚️</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqR-dy-iKN">
+                                        <rect key="frame" x="72" y="0.0" width="24" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="PNo-4z-m6K"/>
+                                        </constraints>
+                                        <string key="text">💩
+💩
+💩
+💩
+💩</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZk-rt-0La">
+                                        <rect key="frame" x="96" y="0.0" width="72" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="T1N-Yx-IB0"/>
+                                        </constraints>
+                                        <string key="text">⌚️⌚️⌚️
+⌚️💩⌚️
+⌚️⌚️⌚️
+⌚️💩⌚️
+⌚️⌚️⌚️</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bg4-av-aAN">
+                                        <rect key="frame" x="168" y="0.0" width="72" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="dqU-cD-Vci"/>
+                                        </constraints>
+                                        <string key="text">💩💩💩
+💩⌚️💩
+💩💩💩
+💩⌚️💩
+💩💩💩</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="918-FA-v0w">
+                                        <rect key="frame" x="240" y="0.0" width="72" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="jXA-Z7-w3f"/>
+                                        </constraints>
+                                        <string key="text">⌚️⌚️⌚️
+⌚️💩⌚️
+⌚️⌚️⌚️
+⌚️💩⌚️
+⌚️⌚️⌚️</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPa-aM-twC">
+                                        <rect key="frame" x="312" y="0.0" width="24" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="nqV-dG-3Ru"/>
+                                        </constraints>
+                                        <string key="text">💩
+💩
+💩
+💩
+💩</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUV-OG-hse">
+                                        <rect key="frame" x="336" y="0.0" width="72" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="PKm-95-dMK"/>
+                                        </constraints>
+                                        <string key="text">⌚️⌚️⌚️
+⌚️💩⌚️
+⌚️⌚️⌚️
+⌚️💩⌚️
+⌚️⌚️⌚️</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aII-ua-re1">
+                                <rect key="frame" x="134" y="464" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="クソモード起動"/>
+                                <connections>
+                                    <action selector="rotateAction:" destination="IdV-Gv-dqZ" eventType="touchUpInside" id="Jrs-32-CbP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jw5-3r-RIg" firstAttribute="centerX" secondItem="WJN-m6-Jal" secondAttribute="centerX" id="bO2-sc-k9A"/>
+                            <constraint firstItem="Jw5-3r-RIg" firstAttribute="centerY" secondItem="WJN-m6-Jal" secondAttribute="centerY" id="brF-gH-wWw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="クソ時計" id="yhD-NV-x1K"/>
+                    <connections>
+                        <outlet property="h1Label" destination="IP7-5D-lmx" id="0cj-u7-Her"/>
+                        <outlet property="h2Label" destination="ZZk-rt-0La" id="pIr-lI-3UI"/>
+                        <outlet property="h3Label" destination="918-FA-v0w" id="Vrn-zW-gyX"/>
+                        <outlet property="h4Label" destination="pUV-OG-hse" id="q9H-E2-KYe"/>
+                        <outlet property="stackView" destination="Jw5-3r-RIg" id="2sw-hB-F91"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lMz-LP-1OX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856.79999999999995" y="1462.2188905547227"/>
         </scene>
     </scenes>
 </document>
