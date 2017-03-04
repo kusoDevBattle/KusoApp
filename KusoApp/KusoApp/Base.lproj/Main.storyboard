@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KqO-Xj-a4c">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="cqa-0f-KC1">
+            <objects>
+                <navigationController id="KqO-Xj-a4c" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7nP-sp-0hM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qt9-nG-4Qc" kind="relationship" relationship="rootViewController" id="S59-JB-Kt9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hKI-Gw-aRu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-729" y="799"/>
+        </scene>
+        <!--クソアプリメニュー-->
+        <scene sceneID="Ko9-uu-lsT">
+            <objects>
+                <viewController title="クソアプリメニュー" id="qt9-nG-4Qc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z8o-Lv-OZf"/>
+                        <viewControllerLayoutGuide type="bottom" id="oAv-aS-P0x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3nW-QN-PWX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHB-k8-uho">
+                                <rect key="frame" x="16" y="85" width="133" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="クソ電卓"/>
+                                <connections>
+                                    <segue destination="mH6-Ao-mEK" kind="show" id="Xqv-Qd-5xy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="クソアプリメニュー" id="mSk-sK-3fj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="giX-3y-er4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="790.25487256371821"/>
+        </scene>
+        <!--クソ電卓-->
+        <scene sceneID="lji-E3-RNX">
+            <objects>
+                <viewController title="クソ電卓" id="mH6-Ao-mEK" customClass="CalViewController" customModule="KusoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PR7-32-CBt"/>
+                        <viewControllerLayoutGuide type="bottom" id="1my-5d-csH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4P0-UE-6hM">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n9D-LN-mws">
+                                <rect key="frame" x="16" y="8" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3e-HJ-mUL" customClass="KusoButton" customModule="KusoApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="86" width="96" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <state key="normal" title="?"/>
+                                <connections>
+                                    <action selector="kusoButtonAction:" destination="mH6-Ao-mEK" eventType="touchUpInside" id="neY-TV-Nil"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvm-3Z-oOe" customClass="KusoButton" customModule="KusoApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="210" width="96" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <state key="normal" title="?"/>
+                                <connections>
+                                    <action selector="kusoButtonAction:" destination="mH6-Ao-mEK" eventType="touchUpInside" id="b1i-GW-Xe1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2E-Fu-69o" customClass="KusoButton" customModule="KusoApp" customModuleProvider="target">
+                                <rect key="frame" x="139" y="210" width="96" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <state key="normal" title="?"/>
+                                <connections>
+                                    <action selector="kusoButtonAction:" destination="mH6-Ao-mEK" eventType="touchUpInside" id="Wyp-is-ejI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6Y-1Z-7TA" customClass="KusoButton" customModule="KusoApp" customModuleProvider="target">
+                                <rect key="frame" x="243" y="210" width="96" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <state key="normal" title="?"/>
+                                <connections>
+                                    <action selector="kusoButtonAction:" destination="mH6-Ao-mEK" eventType="touchUpInside" id="YEr-p1-hRg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1A-e2-nl2" customClass="KusoButton" customModule="KusoApp" customModuleProvider="target">
+                                <rect key="frame" x="23" y="334" width="96" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <state key="normal" title="?"/>
+                                <connections>
+                                    <action selector="kusoButtonAction:" destination="mH6-Ao-mEK" eventType="touchUpInside" id="QGY-u2-Wjn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4u-aH-NNj" customClass="KusoButton" customModule="KusoApp" customModuleProvider="target">
+                                <rect key="frame" x="139" y="334" width="96" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <state key="normal" title="?"/>
+                                <connections>
+                                    <action selector="kusoButtonAction:" destination="mH6-Ao-mEK" eventType="touchUpInside" id="sUr-B9-fwq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRW-Ii-ZTZ" customClass="KusoButton" customModule="KusoApp" customModuleProvider="target">
+                                <rect key="frame" x="139" y="489" width="96" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <state key="normal" title="?"/>
+                                <connections>
+                                    <action selector="kusoButtonAction:" destination="mH6-Ao-mEK" eventType="touchUpInside" id="rxr-LA-bN8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2y-uK-NCa">
+                                <rect key="frame" x="35" y="489" width="96" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="plusAction:" destination="mH6-Ao-mEK" eventType="touchUpInside" id="2EN-6i-L8k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXj-Tb-ctQ" customClass="KusoButton" customModule="KusoApp" customModuleProvider="target">
+                                <rect key="frame" x="243" y="334" width="96" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <state key="normal" title="?"/>
+                                <connections>
+                                    <action selector="kusoButtonAction:" destination="mH6-Ao-mEK" eventType="touchUpInside" id="FiU-eS-WAa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="in3-f9-zzs" customClass="KusoButton" customModule="KusoApp" customModuleProvider="target">
+                                <rect key="frame" x="139" y="86" width="96" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <state key="normal" title="?"/>
+                                <connections>
+                                    <action selector="kusoButtonAction:" destination="mH6-Ao-mEK" eventType="touchUpInside" id="Nt4-QD-B8W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wx0-RO-a23" customClass="KusoButton" customModule="KusoApp" customModuleProvider="target">
+                                <rect key="frame" x="243" y="86" width="96" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <state key="normal" title="?"/>
+                                <connections>
+                                    <action selector="kusoButtonAction:" destination="mH6-Ao-mEK" eventType="touchUpInside" id="tPr-8V-v5Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRA-QH-C0l">
+                                <rect key="frame" x="243" y="494" width="96" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <state key="normal" title="="/>
+                                <connections>
+                                    <action selector="resultAction:" destination="mH6-Ao-mEK" eventType="touchUpInside" id="ftb-53-jFm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="n9D-LN-mws" firstAttribute="top" secondItem="PR7-32-CBt" secondAttribute="bottom" constant="8" id="1G8-qF-NKN"/>
+                            <constraint firstAttribute="trailing" secondItem="n9D-LN-mws" secondAttribute="trailing" constant="16" id="b21-4T-peS"/>
+                            <constraint firstItem="n9D-LN-mws" firstAttribute="leading" secondItem="4P0-UE-6hM" secondAttribute="leading" constant="16" id="dbi-A5-fj9"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="クソ電卓" id="OoA-03-Xqr"/>
+                    <connections>
+                        <outlet property="button1" destination="z3e-HJ-mUL" id="TvJ-y2-89v"/>
+                        <outlet property="button10" destination="hRW-Ii-ZTZ" id="K1K-2P-qtM"/>
+                        <outlet property="button2" destination="in3-f9-zzs" id="W4G-et-k0D"/>
+                        <outlet property="button3" destination="Wx0-RO-a23" id="LCK-cL-h0k"/>
+                        <outlet property="button4" destination="Bvm-3Z-oOe" id="eLa-S4-CqR"/>
+                        <outlet property="button5" destination="y2E-Fu-69o" id="LLk-Dd-2TJ"/>
+                        <outlet property="button7" destination="g1A-e2-nl2" id="1ce-fh-H0f"/>
+                        <outlet property="button8" destination="e4u-aH-NNj" id="Ybt-H1-fRi"/>
+                        <outlet property="button9" destination="fXj-Tb-ctQ" id="JEX-5h-2Np"/>
+                        <outlet property="buttpn6" destination="c6Y-1Z-7TA" id="InR-Y5-fJu"/>
+                        <outlet property="textField" destination="n9D-LN-mws" id="AJ9-SG-BXB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VGH-ge-pv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856.79999999999995" y="790.25487256371821"/>
+        </scene>
+    </scenes>
+</document>
